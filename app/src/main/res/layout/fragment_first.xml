@@ -5,30 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FirstFragment">
-    <androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/motion_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutDescription="@xml/fragment_motion_system_scene">
 
         <ImageView
-            android:id="@+id/image_system"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/image_car"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:clickable="true"
             app:srcCompat="@drawable/yellow_car" />
 
     </androidx.constraintlayout.motion.widget.MotionLayout>
-    <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/play_pause_circle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/play_pause_circle"
-        android:backgroundTint="@color/colorAccent"
-        android:checked="true"
-        android:contentDescription="@string/move_car"
-        android:thumb="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline_vertical_motion" />
 
 </FrameLayout>
